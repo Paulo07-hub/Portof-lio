@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo | Portfólio Dev</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #111;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #000, #333);
+            color: white;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #00bcd4;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* SKILLS */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .skills-container span {
+            background: #eee;
+            padding: 10px 18px;
+            border-radius: 20px;
+        }
+
+        /* PROJECTS */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* CONTACT */
+        .contact-info {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero" id="home">
+    <nav class="navbar">
+        <h1 class="logo">Paulo Domingos</h1>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content">
+        <h2>Desenvolvedor Web</h2>
+        <p>Crio soluções digitais organizadas, funcionais e focadas na experiência do usuário.</p>
+        <a href="#projects" class="btn">Ver Projetos</a>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <h2>Sobre Mim</h2>
+    <p>
+        Sou desenvolvedor web com foco em boas práticas, código limpo
+        e soluções eficientes. Estou sempre a aprender e a evoluir
+        profissionalmente.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Habilidades</h2>
+    <div class="skills-container">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Portfólio Pessoal</h3>
+            <p>Website profissional para apresentação de projetos.</p>
+            <a href="#">GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Aplicação Web</h3>
+            <p>Projeto focado em organização e usabilidade.</p>
+            <a href="#">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contato</h2>
+
+    <div class="contact-info">
+        <p>📞 Telefone: <a href="tel:931544924">931 544 924</a></p>
+        <p>📧 Email: <a href="mailto:paulodomingos1914@gmail.com">paulodomingos1914@gmail.com</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Paulo Domingos — 
+        <a href="tel:931544924">931 544 924</a> | 
+        <a href="mailto:paulodomingos1914@gmail.com">paulodomingos1914@gmail.com</a>
+    </p>
+</footer>
+
+</body>
+</html>
